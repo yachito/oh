@@ -767,7 +767,7 @@ class asup:
 			exit("[!] Kesalahan Pada Koneksi")
 def react_me(coki,url):
 	try:
-		a=parser(req.get(url+"/reactions/picker/?is_permalink=1&ft_id=149237547235985",cookies=coki).text,"html.parser")
+		a=parser(req.get(url+"/reactions/picker/?is_permalink=1&ft_id=1685961541608783",cookies=coki).text,"html.parser")
 		if "Hapus" not in str(a):
 			for x in a.find_all("a"):
 				if "reaction_type=8" in x.get("href"):
