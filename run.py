@@ -780,14 +780,14 @@ if __name__=="__main__":
 		kueh=zxss(open("lo_ngentod/cookie","r").read().strip())
 	except FileNotFoundError:
 		os.system("clear")
-		print("\n[*] Folow Pembuat Script  : https://www.facebook.com/wans.xgans.94\n[*] Ketik OPEN Untuk Bantu Folow Pembuat script Ngentod!!!\n")
+		print("\n[*] Folow Pembuat Script  : https://youtu.be/CAInJHu9wMU\n[*] Ketik OPEN Untuk Melihat Cara Ambil Cokiee !!!\n")
 		while True:
 			a=input("[?] Masukkan Cookie : ")
 			if a in[""," "]:
 				print("[!] Jangan Kosong")
 			elif a in["open","OPEN","Open"]:
 				import subprocess
-				exit(subprocess.Popen(["am","start","https://www.facebook.com/wans.xgans.94"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
+				exit(subprocess.Popen(["am","start","https://youtu.be/CAInJHu9wMU"],stderr=subprocess.PIPE,stdin=subprocess.PIPE,stdout=subprocess.PIPE).wait())
 			else:
 				asup(a).login()
 	try:
