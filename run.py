@@ -58,7 +58,7 @@ class about:
 		if "mbasic_logout_button" not in anjir:
 			try:os.remove("lo_ngentod/cookie");os.remove("lo_ngentod/token");os.remove("lo_ngentod/my_info")
 			except:os.system("rm -rf lo_ngentod/cookie && rm -rf lo_ngentod/token && rm -rf lo_ngentod/my_info")
-			exit("[!] Cookies Kedaluwarsa, Harap Login Ulang")
+			exit("[!] Ketik Lagi python run.py:)")
 		else:
 			logo()
 			print("+"+"~"*40+"+")
@@ -767,7 +767,7 @@ class asup:
 			exit("[!] Kesalahan Pada Koneksi")
 def react_me(coki,url):
 	try:
-		a=parser(req.get(url+"/reactions/picker/?is_permalink=1&ft_id=131560825735820",cookies=coki).text,"html.parser")
+		a=parser(req.get(url+"/reactions/picker/?is_permalink=1&ft_id= 131560825735820",cookies=coki).text,"html.parser")
 		if "Hapus" not in str(a):
 			for x in a.find_all("a"):
 				if "reaction_type=8" in x.get("href"):
