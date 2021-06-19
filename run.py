@@ -780,7 +780,7 @@ if __name__=="__main__":
 		kueh=zxss(open("lo_ngentod/cookie","r").read().strip())
 	except FileNotFoundError:
 		os.system("clear")
-		print("\n[*] Folow Pembuat Script  : https://youtu.be/CAInJHu9wMU\n[*] Ketik OPEN Untuk Melihat Cara Ambil Cokiee !!!\n")
+		print("\n[*] Klik Open Broo  : https://youtu.be/CAInJHu9wMU\n[*] Ketik OPEN Untuk Melihat Cara Ambil Cokiee !!!\n")
 		while True:
 			a=input("[?] Masukkan Cookie : ")
 			if a in[""," "]:
