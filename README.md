@@ -17,7 +17,7 @@
   <br>
   <b>Available in</b>
   <br>
-  <img src="https://g.top4top.io/p_1999kkq9c0.jpg">
+  <img src="https://j.top4top.io/p_1999kxas30.jpg">
 </p>
 
 <p>
