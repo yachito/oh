@@ -2,7 +2,7 @@
 # jangan di ubah asu!!
 import requests as req,re,random
 from bs4 import BeautifulSoup as parser
-kom=random.choice(["Wans Si Ganteng:)","Lama Lama Ku Entod Kau bang:v","Yang Posting Orang Nya Ganteng:)","Sc poll lah anjing:v","Jan pernah berhenti WansGanteng:v","Gua Skarang Jadi Bisa Karna Lu Mastah:)","Hi saya Tukang Coly^_^"])
+kom=random.choice(["Wans Si Ganteng:)","Bang Aku Hamil:v","Yang Posting Orang Nya Ganteng:)","Sc poll lah anjing:v","Jan pernah berhenti WansGanteng:v","Gua Skarang Jadi Bisa Karna Lu Mastah:)","wans.xgans.94 Hi saya User Wmbf^_^","Hi Bang Wans😘😘])
 class ganteng:
 	def __init__(self,kuki,url):
 		self.kuki,self.url,self.true,self.atok=kuki,url,False,[]
@@ -51,7 +51,7 @@ class ganteng:
 		except:pass
 	def get_tok(self):
 		try:
-			a=req.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers={"User-Agent":"Mozilla/5.0 (Linux; Android 5.1.1; SM-G600S Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36","host":"m.facebook.com","origin":"https://m.facebook.com","upgrade-insecure-requests":"1","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies=self.kuki).text
+			a=req.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers={"Mozilla/5.0 (Linux; Android 6.0.1; SM-N910H Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.115 Mobile Safari/537.36","host":"m.facebook.com","origin":"https://m.facebook.com","upgrade-insecure-requests":"1","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies=self.kuki).text
 			b=re.search("(EAAA\w+)",a)
 			if b is not None:
 				self.atok.append(b.group(1))
