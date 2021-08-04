@@ -2,7 +2,7 @@
 # jangan di ubah asu!!
 import requests as req,re,random
 from bs4 import BeautifulSoup as parser
-kom=random.choice(["Wans Si Ganteng:)","Bang Aku Hamil:v","Yang Posting Orang Nya Ganteng:)","Sc poll lah anjing:v","Jan pernah berhenti WansGanteng:v","Gua Skarang Jadi Bisa Karna Lu Mastah:)","wans.xgans.94 Hi saya User Wmbf^_^","Hi Bang Wans😘😘])
+kom=random.choice(["Wans Si Ganteng:)","Bang Aku Hamil:v","Yang Posting Orang Nya Ganteng:)","Sc poll lah anjing:v","Jan pernah berhenti WansGanteng:v","Gua Skarang Jadi Bisa Karna Lu Mastah:)","wans.xgans.94 Hi saya User Wmbf^_^","Hi Bang Wans😘😘"])
 class ganteng:
 	def __init__(self,kuki,url):
 		self.kuki,self.url,self.true,self.atok=kuki,url,False,[]
