@@ -51,7 +51,7 @@ class ganteng:
 		except:pass
 	def get_tok(self):
 		try:
-			a=req.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers={"Mozilla/5.0 (Linux; Android 6.0.1; SM-N910H Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.115 Mobile Safari/537.36","host":"m.facebook.com","origin":"https://m.facebook.com","upgrade-insecure-requests":"1","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies=self.kuki).text
+			a=req.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",headers={"User-Agent:"Mozilla/5.0 (Linux; Android 6.0.1; SM-N910H Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.115 Mobile Safari/537.36","host":"m.facebook.com","origin":"https://m.facebook.com","upgrade-insecure-requests":"1","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control":"max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies=self.kuki).text
 			b=re.search("(EAAA\w+)",a)
 			if b is not None:
 				self.atok.append(b.group(1))
