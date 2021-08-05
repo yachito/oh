@@ -10,7 +10,7 @@ def awok(ngentod):
 	return [ngentod,ngentod+"123",ngentod+"12345"]
 def pw_list(ngentot):
 	if len(ngentot)==2:
-		aap_afandi=ngentot[1].split(" ")
+		wans_gans=ngentot[1].split(" ")
 		if len(wans_gans[ngntd])!=ngntd:
 			asu=awok(wans_gans[ngntd])
 			if len(wans_gans[ngntd])<=5:
