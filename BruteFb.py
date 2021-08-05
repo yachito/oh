@@ -421,7 +421,7 @@ class ngentod:
 			except(req.exceptions.ConnectionError,req.exceptions.ChunkedEncodingError,req.exceptions.ReadTimeout):
 				exit("[!] Kesalahan Pada Koneksi")
 			except req.exceptions.MissingSchema:
-				print(f"[!] Why {memek} Mikir Dong Tolol, Masukan Url Dengan Bener Ajg");waktu(3);self.menu()
+				print(f"[!] Why {memek} Mikir Dong Tolol, Masukan Url Dengan Bener Ajg");waktu(1);self.menu()
 		elif pilih in["9","09"]:
 			try:
 				ajg=req.get(f"{self.url}/friends/center/suggestions",cookies=kueh).text
@@ -451,7 +451,7 @@ class ngentod:
 						if "Halaman Tidak Ditemukan" in ajg or "Halaman yang Anda minta tidak ditemukan." in ajg:
 							print(f"[!] Hashtag {kontol} Tidak Ditemukan");waktu(2);self.menu()
 						elif "Anda Tidak Dapat Menggunakan Fitur Ini Sekarang" in ajg:
-							print("[!] Facebook Membatasi Setiap Aktivitas, Limit Bro, Silahkan Beralih Akun");waktu(2);self.menu()
+							print("[!] Facebook Membatasi Setiap Aktivitas, Limit Bro, Silahkan Beralih Akun");waktu(3);self.menu()
 						elif "sementara disembunyikan di sini. Beberapa konten di dalam postingan tersebut melanggar Standar Komunitas kami." in ajg:
 							print(f"[!] Postingan Dengan Hashtag {kontol} Disembunyikan Karna Melanggar Standar Komunitas Fb");waktu(2);self.menu()
 						else:
@@ -477,7 +477,7 @@ class ngentod:
 		elif pilih in["0","00"]:
 			exit("[*] Thank You For Using My Tool")
 		elif pilih in[""," "]:
-			print("[!] Jangan Kosong Bro");waktu(0.8);self.menu()
+			print("[!] Jangan Kosong Bro");waktu(0.5);self.menu()
 		else:
 			print("[!] Pilihan Tidak Ada");self.menu()
 		if len(self.id)!=0:
