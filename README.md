@@ -55,5 +55,5 @@ pkg upgrade
 pkg install python
 git clone https://github.com/wansgang980/WMBF
 cd WMBF
-python run.py
+python BruteFb.py
 ```
