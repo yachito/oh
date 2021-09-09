@@ -312,7 +312,7 @@ class ngentod:
 						elif "Konten Tidak Ditemukan" in ajg:
 							print(f"[!] Group Dengan Id {kontol} Tidak Ditemukan");waktu(2);self.menu()
 						else:
-							print("[*] Target Name : "+re.findall("\<title\>(.*?)<\/title\>",ajg)[0][8:])
+							print("[*] Target Name : "+re.findall("\<title\>(.*?)<\/title\>",ajg)[0][2:])
 							print("[!] Tekan CTRL + C Untuk Berhenti")
 							self.memekgrup(f"{self.url}/browse/group/members/?id={kontol}");break
 					except(req.exceptions.ConnectionError,req.exceptions.ChunkedEncodingError,req.exceptions.ReadTimeout):
